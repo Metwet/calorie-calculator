@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container calculator__container">
+            <div class="introduce">
+                <h1>Calorie Calculator</h1>
+                <p>Приложение для отслеживания потребления калорий.</p>
+            </div>
+            <div class="add-item__block">
+                <form id="addItemForm">
+                    <input type="text" name="itemName" id="itemName" placeholder="Название продукта" required>
+                    <input type="number" name="itemCalories" id="itemCalories" placeholder="Калории" required>
+                    <input type="date" name="itemDate" id="itemDate" required>
+                    <button type="submit">Добавить</button>
+                </form>
+            </div>
+            <div class="calorie-limit__blcok">
+                <div class="calorie-limit__text">Дневной лимит калорий: <span class="limit">3000</span></div>
+                <div class="calorie-limit__change">
+                    <div class="calorie-limit__change-button">
+                        <button id="change-limit">Изменить</button>
+                    </div>
+                    <div class="calorie-limit__set-new-limit">
+                        <input type="number" id="newLimitInput">
+                        <button id="newLimitButton">Установить новый лимит</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calorie-limit__warning">
+                Лимит на день превышен!!!
+            </div>
+            <div class="total-calorie__block">
+                <div class="total-calorie__text">
+                    Всего на <span class="total-date"></span> учтено <span class="total-calorie"></span>.
+                </div>
+                <div class="total-calorie__change">
+                    Выбрать другую дату:
+                    <input type="date" name="totalDate" id="totalDate">
+                    <button id="changeTotalDate">Обновить список</button>
+                </div>
+            </div>
+            <div class="items-list__block">
+                <div class="items-list__title">
+                    <div class="title__name name-column">
+                        <span class="item-title__name">
+                            Продукты:
+                        </span>
+                        <button id="filter-name">&Phi;</button>
+                    </div>
+                    <div class="title__calorie calorie-column">
+                        <span class="item-title__calorie">
+                            Калории:
+                        </span>
+                        <button id="filter-calorie">&Phi;</button>
+                    </div>
+                    <div class="title__checkboxes checkbox-column">
+                        <input type="checkbox" id="allCheckboxes">
+                        <button id="delete">Удалить</button>
+                    </div>
+                </div>
+                <div class="items-list"></div>
+
+                <div class="calorie-chart__block">
+                    <canvas id="calorieChart" width="500" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* add item */
+
+.add-item__block {
+    margin-bottom: 20px;
+}
+
+/* limit calorie */
+
+.calorie-limit__blcok {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.calorie-limit__set-new-limit {
+    display: none;
+}
+
+.calorie-limit__warning {
+    display: none;
+    font-weight: 600;
+    font-size: large;
+    color: red;
+}
+
+/* total calorie */
+
+.total-calorie__block {
+    margin-bottom: 20px;
+}
+
+/* items list */
+
+.items-list__title {
+    display: flex;
+    background-color: beige;
+    padding: 5px 4px;
+}
+
+.name-column {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid gray;
+    padding: 5px 20px;
+}
+
+.calorie-column {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid gray;
+}
+
+.checkbox-column {
+    width: 100%;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.item-row {
+    padding: 5px 4px;
+    display: flex;
+    border-bottom: 1px solid beige;
+}
+
+/* calorie chart */
+
+.calorie-chart__block{
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+#calorieChart {
+    border: 1px solid beige;
+}
